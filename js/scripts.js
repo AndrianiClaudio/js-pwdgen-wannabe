@@ -1,5 +1,4 @@
-// costante: "21"
-const secretNumber = 21;
+// const secretNumber = 21;
 // Chiedo il nome all'utente e salvo in una variabile*/
 let firstName = prompt('Inserisci il tuo nome');
 console.log(firstName);
@@ -7,9 +6,16 @@ console.log(firstName);
 let surname = prompt ('Inserisci il tuo cognome');
 console.log(surname);
 // Chiedo il colore preferito all'utente e salvo in una variabile*/
-let userColor = prompt ('Inserisci il tuo colore preferito');
-console.log(userColor);
-// Scrivo sulla pagina nome+cognome+colorepreferito+21
-console.log(`${firstName}${surname}${userColor}${secretNumber}`);
-document.writeln(`${firstName}${surname}${userColor}${secretNumber}`);
-document.getElementById('pass-print').innerHTML = `<span>${firstName}${surname}${userColor}${secretNumber}</span>`;
+let bestColor = prompt ('Inserisci il tuo colore preferito');
+console.log(bestColor);
+// Chiedo il numero preferito all'utente e salvo in una variabile*/
+let bestNum = parseInt(prompt('Inserisci il tuo numero preferito'));
+console.log(bestNum);
+// numero preferito + 5
+let sum = bestNum + 5;
+// Creo la password
+let password = `${firstName}${surname}${bestColor}${sum}`;
+console.log(password);
+document.writeln(password);
+document.getElementById("pass-print").innerHTML = password;
+// Scrivo sulla pagina la password
