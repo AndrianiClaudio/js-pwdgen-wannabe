@@ -15,6 +15,7 @@ console.log(bestNum);
 let sum = bestNum + 5;
 // Creo la password
 let password = `${firstName}${surname}${bestColor}${sum}`;
+// Stampo la password
 console.log(password);
 document.writeln(password);
 document.getElementById("pass-print").innerHTML = password;
