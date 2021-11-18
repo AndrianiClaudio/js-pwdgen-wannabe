@@ -12,3 +12,4 @@ console.log(userColor);
 // Scrivo sulla pagina nome+cognome+colorepreferito+21
 console.log(`${firstName}${surname}${userColor}${secretNumber}`);
 document.writeln(`${firstName}${surname}${userColor}${secretNumber}`);
+document.getElementById('pass-print').innerHTML = `${firstName}${surname}${userColor}${secretNumber}`;
